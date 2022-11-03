@@ -1,0 +1,53 @@
+
+.fullWeb {
+    background-color: rgb(204, 206, 207);
+}
+
+.home {
+    color: black;
+}
+
+.homeText {
+    color: black;
+    font: Serif;
+}
+
+.homeText > span {
+    color: rgb(216, 83, 0);
+}
+
+
+.card {
+    display: grid;
+    grid-template-areas: 
+        'GitHub Email LinkedIn';
+    border: 2px solid var(--clr-dark);
+    border-radius: 50%;
+    transition: .5s;
+    padding: 0.2em 0.5em;
+    margin-right: .5em;
+    margin-left: 0.5em;
+    color: var(--clr-dark)
+}
+
+.body {
+    background-color: transparent;
+}
+
+.github {
+    grid-area: GitHub;
+    height: 12vmax;
+    width: 12vmax;
+}
+
+.email {
+    grid-area: Email;
+    height: 12vmax;
+    width: 12vmax;
+}
+
+.linkedin {
+    grid-area: LinkedIn;
+    height: 12vmax;
+    width: 12vmax;
+}
