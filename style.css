@@ -1,53 +1,126 @@
-
 .fullWeb {
-    background-color: rgb(204, 206, 207);
+  background-color: rgb(204, 206, 207);
 }
 
 .home {
-    color: black;
+  color: black;
 }
 
 .homeText {
-    color: black;
-    font: Serif;
+  color: black;
+  font: Serif;
 }
 
 .homeText > span {
-    color: rgb(216, 83, 0);
+  color: rgb(216, 83, 0);
 }
 
+.cardHome {
+  display: grid;
+  grid-template-areas: "GitHub Email LinkedIn";
+  border: 2px solid var(--clr-dark);
+  border-radius: 50%;
+  transition: 0.5s;
+  padding: 0.2em 0.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  color: var(--clr-dark);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
 
 .card {
-    display: grid;
-    grid-template-areas: 
-        'GitHub Email LinkedIn';
-    border: 2px solid var(--clr-dark);
-    border-radius: 50%;
-    transition: .5s;
-    padding: 0.2em 0.5em;
-    margin-right: .5em;
-    margin-left: 0.5em;
-    color: var(--clr-dark)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    
 }
 
 .body {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .github {
-    grid-area: GitHub;
-    height: 12vmax;
-    width: 12vmax;
+  grid-area: GitHub;
+  height: 12vmax;
+  width: 12vmax;
 }
 
 .email {
-    grid-area: Email;
-    height: 12vmax;
-    width: 12vmax;
+  grid-area: Email;
+  height: 12vmax;
+  width: 12vmax;
 }
 
 .linkedin {
-    grid-area: LinkedIn;
-    height: 12vmax;
-    width: 12vmax;
+  grid-area: LinkedIn;
+  height: 12vmax;
+  width: 12vmax;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: center;
+  width: 33.33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  align-items: center;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: inline-table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
 }
